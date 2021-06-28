@@ -1,15 +1,7 @@
 import typer
+from . import __version__
 
-
-app = typer.Typer()
-
-
-@app.callback()
-def callback():
-    """
-    NOR/K CLI
-    """
-
+app = typer.Typer(help=f"NOR/K {typer.style(__version__, fg=typer.colors.GREEN)}")
 
 @app.command()
 def shoot():
