@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nork"
-version = "0.1.7"
+version = "0.1.8"
 description = "CLI for open source PaaS and framework."
 authors = ["NORK <support@nork.sh>"]
 readme = "README.md"
