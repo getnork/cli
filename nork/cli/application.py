@@ -4,7 +4,7 @@ import typer
 import importlib
 import sys
 
-from .. import __version__
+from .. import __version__, config
 from ..core import paths
 
 
@@ -20,6 +20,10 @@ class Application:
         sys.path.append(paths.PROJECT_PATH)
 
         self.dynamic_commands(["Os", "OsEnv"], "nork.commands")
+
+        if config.get("framework"):
+            self.dynamic_commands(["Serve"], "nork.framework.commands")
+
         self.dynamic_commands(paths.COMMANDS_PATH, "commands")
         self.dynamic_commands(paths.COMMANDS_PATH_APP, "app.commands")
 

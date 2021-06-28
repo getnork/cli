@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "nork"
-version = "0.1.6"
+version = "0.1.7"
 description = "CLI for open source PaaS and framework."
 authors = ["NORK <support@nork.sh>"]
 readme = "README.md"
@@ -37,6 +37,8 @@ nork = "nork.cli:app"
 python = "^3.8"
 typer = {extras = ["all"], version = "^0.3.2"}
 fastapi = {extras = ["all"], version = "^0.65.2", optional = true}
+toml = "^0.10.2"
+fnc = "^0.5.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

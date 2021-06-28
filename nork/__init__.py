@@ -9,4 +9,13 @@ $$ |  $$ |\$$$$$$  |$$ |      $$ | \$$\
 \__|  \__| \______/ \__|      \__|  \__|
 """
 
-__version__ = "0.1.6"
+import toml
+
+__version__ = "0.1.7"
+
+config = dict()
+
+try:
+    config = toml.load(f="./nork.toml")
+except Exception as exception:
+    pass
