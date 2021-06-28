@@ -9,8 +9,4 @@ $$ |  $$ |\$$$$$$  |$$ |      $$ | \$$\
 \__|  \__| \______/ \__|      \__|  \__|
 """
 
-import toml
-
-config_project = toml.load(f="./pyproject.toml")
-
-__version__ = config_project['tool']['poetry']['version']
+__version__ = "0.1.6"
