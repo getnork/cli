@@ -6,7 +6,7 @@ authors = ["NORK <support@nork.sh>"]
 readme = "README.md"
 
 [tool.poetry.scripts]
-nork = "nork.main:app"
+nork = "nork.cli:app"
 
 [tool.poetry.dependencies]
 python = "^3.8"
