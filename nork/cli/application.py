@@ -19,7 +19,7 @@ class Application:
 
         sys.path.append(paths.PROJECT_PATH)
 
-        self.dynamic_commands(["Os", "OsEnv"], "nork.commands")
+        self.dynamic_commands(["OsEnv", "FrameworkNew", "Install"], "nork.commands")
 
         if config.get("framework"):
             self.dynamic_commands(["Serve"], "nork.framework.commands")
