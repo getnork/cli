@@ -9,9 +9,12 @@ $$ |  $$ |\$$$$$$  |$$ |      $$ | \$$\
 \__|  \__| \______/ \__|      \__|  \__|
 """
 from nork.core import paths
+from dotenv import load_dotenv
 import toml
 
-__version__ = "0.1.12"
+__version__ = "0.1.13"
+
+load_dotenv()
 
 config = dict()
 

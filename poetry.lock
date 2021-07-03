@@ -389,7 +389,7 @@ name = "python-dotenv"
 version = "0.18.0"
 description = "Read key-value pairs from a .env file and set them as environment variables"
 category = "main"
-optional = true
+optional = false
 python-versions = "*"
 
 [package.extras]
@@ -588,7 +588,7 @@ framework = ["fastapi"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "2c62b20c033184e368aae717437082d99e80643beef39e66e1f01386285ff5b7"
+content-hash = "2894af6178fc43b228e713c9103636674adb5f21200aadf3833e2d51971439ae"
 
 [metadata.files]
 aiofiles = [

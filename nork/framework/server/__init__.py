@@ -16,7 +16,7 @@ except Exception as exception:
 @app.on_event("startup")
 async def on_startup():
     try:
-        getattr(server, 'on_startup')(app)
+        await getattr(server, 'on_startup')(app)
     except Exception as exception:
         if type(exception).__name__ != "AttributeError":
             Log.error(f"Event Startup :: {exception}")
@@ -25,7 +25,7 @@ async def on_startup():
 @app.on_event("shutdown")
 async def on_shutdown():
     try:
-        getattr(server, 'on_shutdown')(app)
+        await getattr(server, 'on_shutdown')(app)
     except Exception as exception:
         if type(exception).__name__ != "AttributeError":
             Log.error(f"Event Shutdown :: {exception}")
