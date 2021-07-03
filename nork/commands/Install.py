@@ -1,4 +1,4 @@
-from nork.commands import nork, typer
+from nork.commands import nork
 from subprocess import call
 import os
 

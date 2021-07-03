@@ -12,7 +12,7 @@ from nork.core import paths
 from dotenv import load_dotenv
 import toml
 
-__version__ = "0.1.13"
+__version__ = "0.1.14"
 
 load_dotenv()
 

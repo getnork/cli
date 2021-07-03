@@ -1,4 +1,4 @@
-from nork.commands import nork, typer
+from nork.commands import nork
 from ..core.logging import Log
 from urllib.request import urlopen
 from io import BytesIO
