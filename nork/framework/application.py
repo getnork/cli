@@ -9,6 +9,9 @@ import os
 
 class Application(FastAPI):
 
+    db = None
+    db_client = None
+
     def bootstrap(self):
         self.title = fnc.get("docs.title", config, default="NOR/K")
         self.version = fnc.get("docs.version", config, default=__version__)
